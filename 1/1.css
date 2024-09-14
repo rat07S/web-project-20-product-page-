@@ -1,0 +1,198 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+    font-style: italic;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Glass effect header */
+header {
+    background: rgba(255, 255, 255, 0.163);
+    backdrop-filter: blur(10px);
+    padding: 9px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.store-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #28a745;
+}
+
+/* Main Product Details */
+main {
+    margin-top: 100px;
+}
+
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+/* Product Images */
+.product-images {
+    width: 45%;
+}
+
+#main-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    height: auto;
+    object-fit: cover;
+}
+/* Main Product Image */
+#main-image {
+    width: 100%;
+    max-width: 350px; /* Set a fixed width */
+    height: 350px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the space uniformly */
+    margin-bottom: 15px;
+}
+
+/* Thumbnail Images */
+.thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 60px; /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the thumbnails maintain their aspect ratio */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+
+/* Thumbnail styling */
+.thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 18%;
+    cursor: pointer;
+    transition: transform 0.3s;
+    height: auto;
+    object-fit: cover;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Product Information */
+.product-info {
+    width: 40%;
+    max-width: 400px;
+}
+
+.product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: green;
+}
+
+button#buy-now {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#buy-now:hover {
+    background-color: #218838;
+}
+
+/* Cart section */
+.cart {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cart ul {
+    list-style: none;
+}
+
+#cart-items {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-info {
+        width: 90%;
+        text-align: center;
+    }
+
+    .product-images {
+        width: 90%;
+    }
+
+    .thumbnail-container {
+        justify-content: center;
+    }
+}
